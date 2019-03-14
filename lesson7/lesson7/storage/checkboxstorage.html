@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Checkbox with storage</title>
+    </head>
+    <body>
+    <h1>   Terms & Conditions     </h1>
+    <hr>
+    <input type="checkbox" onchange="remember();"> I agree
+
+    <script>
+        // запомнить состояние checkbox в localStorage
+        function remember(){
+            var input = document.getElementsByTagName('input')[0];
+            // console.dir(input.checked);
+            localStorage.setItem('checkbox', input.checked);
+        }
+        // проверяет если в localStorage имеется checked
+        function isChecked(){
+            var checked = localStorage.getItem('checkbox');
+            //console.log(checked);
+            var input = document.getElementsByTagName('input')[0];
+            if (checked == "true"){
+                input.checked = true;
+            }
+        }
+        isChecked();
+    </script>
+<!--
+Домашнее задание
+
+<h1 id="title"> Welcome , [name]</h1>
+
+<input type="text" placeholder="your name plz///"><button onclick="...">ok</button>
+
+
+
+
+
+
+
+
+ -->
+    </body>
+</html>

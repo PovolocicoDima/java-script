@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dog</title>
+    </head>
+    <body>
+        <script>
+        // user -> prompt(name) -> LocalStorage
+        var name = localStorage.getItem('user');
+        if(name != null){
+            var name_old = prompt("Your name?");
+            localStorage.setItem('user', name_old);
+        } else{
+            new_name = prompt("What is your name?");
+            localStorage.setItem('user', new_name);
+        }
+
+
+        </script>
+    </body>
+</html>

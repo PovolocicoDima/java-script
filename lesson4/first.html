@@ -1,0 +1,51 @@
+DOM / BOM
+
+
+BOM - browser object model
+    wondow ( Window )
+    navigator (  )
+    screen
+    location
+    frames(устаревший подход)
+    history
+
+DOM - document object model
+    document  --- > web page
+
+    Structure -> Objects
+        Elements
+            - Attributes
+            - style
+            * find / navigate
+            * create
+            * remove
+            * copy
+            * update
+        Events
+        Resources
+document <---- Object
+    // shortcuts
+document.title
+document.head
+document.body
+document.links[]
+document.images[]
+document.forms[]
+document.fonts[]
+document.scripts[]
+
+///////////////  navigation
+
+* parentElement
+* nextElementSibling, previousElementSibling
+* firstElementChild , lastElementChild
+* child []
+
+//////////////   search
+document.getElementsById('id-name') -> object / null
+document.getElementsByClassName('class-name') -> object[] / []
+document.getElementsByTagName('tag') -> object[] / []
+
+//
+document.querySelector('css formula') -> object / null
+document.querySelectorAll('css formula') -> object / []

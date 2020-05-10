@@ -1,9 +1,8 @@
-let protoRabbit = {
-    speak(line) {
-        console.log(`${this.type} rabbit speaks: '${line}'`);
-    }
+function Rabbit(type){
+    this.type = type;
 }
+Rabbit.prototype.speak = function(line){
+    console.log(`The ${this.type} rabbit speak: '${line}'`);
+};
 
-let killerRabbit = Object.create(protoRabbit);
-killerRabbit.type = "combat";
-killerRabbit.speak("PIF-PAF");
+let weirdRabbit = new Rabbit('weird');

@@ -6,7 +6,6 @@ function findRoute(graph, from, to) {
             if (place == to) return route.concat(place);
             if (!work.some(w => w.at == place)) {
                 work.push({at: place, route: route.concat(place)});
-                155!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
             }
         }
     }
